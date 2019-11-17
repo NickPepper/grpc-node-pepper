@@ -3,6 +3,6 @@ syntax = "proto3";
 package dummy;
 
 
-message DummyMessage{}
+message DummyMessage {}
 
-service DummyService{}
+service DummyService {}
