@@ -2,12 +2,12 @@
 
 To get started, make sure to install the NPM dependencies:
 
-`$ npm install`
+`$ yarn`
 
 ## To generate code in Protocol Buffers
 First of all do:
 ```
-yarn global add grpc-tools
+$ yarn global add grpc-tools
 ```
 
 And then use the following command to generate code using protobuf plugin:

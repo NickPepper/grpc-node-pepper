@@ -17,6 +17,7 @@
     "pg": "^7.12.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.6.0",
     "nodemon": "^1.19.4"
   }
