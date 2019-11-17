@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package calculator;
+
+service CalculatorService {
+  // gRPC Unary
+  rpc Sum (SumRequest) returns (SumResponse) {};
+}
+
+
+message SumRequest {
+  int64 first_int64 = 1;
+  int64 second_int64 = 2;
+  float first_float = 3;
+  float second_float = 4;
+  double first_double = 5;
+  double second_double = 6;
+}
+
+message SumResponse {
+  int64 int64_sum_result = 1;
+  float float_sum_result = 2;
+  double double_sum_result = 3;
+}

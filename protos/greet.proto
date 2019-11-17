@@ -1,6 +1,11 @@
 syntax = "proto3";
 
-package dummy;
+package greet;
+
+service GreetService {
+  // gRPC Unary
+  rpc Greet (GreetRequest) returns (GreetResponse) {};
+}
 
 
 message Greeting {
@@ -15,9 +20,4 @@ message GreetRequest {
 
 message GreetResponse {
   string result = 1;
-}
-
-service GreetService {
-  // gRPC Unary
-  rpc Greet (GreetRequest) returns (GreetResponse) {};
 }
